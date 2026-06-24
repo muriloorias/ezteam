@@ -10,11 +10,32 @@
 
 <body>
     <div class="product">
-        <img id="image">
-        <h1 id="name"></h1>
-        <p id="descricption"></p>
-        <h2 id="price"></h2>
+
+        <div class="gallery">
+
+            <div class="image-container">
+                <button id="prevBtn" class="nav-btn">❮</button>
+
+                <img id="mainImage" class="main-image">
+
+                <button id="nextBtn" class="nav-btn">❯</button>
+            </div>
+
+          
+        </div>
+
+        <div class="product-info">
+            <h1 id="name"></h1>
+            <p id="descricption"></p>
+            <h2 id="price"></h2>
+
+            <button id="AddToCart">
+                Adicionar ao carrinho
+            </button>
+        </div>
+
     </div>
 </body>
 <script src="../js/seeProduct.js"></script>
+
 </html>

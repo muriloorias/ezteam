@@ -4,7 +4,7 @@ const produtos = [
         name: "RX 580 8GB SOYO",
         description: "Placa de vídeo para jogos em Full HD.",
         price: 599.90,
-        image: "../imgs/rx580.png"
+        image: "../imgs/rx5801.png"
     },
     {
         id: 2,
@@ -18,14 +18,14 @@ const produtos = [
         name: "Hearts of Iron IV",
         description: "Jogo de estratégia da Segunda Guerra Mundial.",
         price: 79.90,
-        image: "../imgs/hoi4.png"
+        image: "../imgs/hoi41.png"
     },
     {
         id: 4,
         name: "Battlefield 6",
         description: "FPS de guerra com batalhas em larga escala.",
         price: 249.90,
-        image: "../imgs/bf6.png"
+        image: "../imgs/bf61.png"
     }
 ];
 
