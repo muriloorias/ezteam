@@ -63,3 +63,8 @@ function GoToLogin(){
     window.location.href = "login.html"
 }
 
+
+function GoToFinishPurchase(){
+    window.location.href = "finishPurchase.html"
+}
+
