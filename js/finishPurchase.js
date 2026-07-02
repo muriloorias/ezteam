@@ -5,6 +5,12 @@ const cartItems =
     document.getElementById("cartItems");
 
 let total = 0;
+let typeOfPaymentInput = document.getElementById("paymentType");
+
+typeOfPaymentInput.addEventListener('change', (event) => {
+    const valorSelecionado = event.target.value;
+    console.log(valorSelecionado);
+});
 
 carrinho.forEach(produto => {
 
@@ -65,6 +71,8 @@ document.getElementById("buyBtn")
             return;
         }
 
+        const typeOfPayment = typeOfPaymentInput.value;
+
         let mensagem =
             "✅ Compra concluída!\n\n";
 
@@ -77,7 +85,8 @@ document.getElementById("buyBtn")
 
                 mensagem +=
                     `${produto.name}\n` +
-                    `Chave: ${gerarChave()}\n\n`;
+                    `Chave: ${gerarChave()}\n` +
+                    `Tipo de pagamento: ${typeOfPayment}\n\n`;
             }
         });
 
@@ -86,9 +95,9 @@ document.getElementById("buyBtn")
         localStorage.removeItem("carrinho");
 
         location.reload();
-});
+    });
 
 document.getElementById("homeBtn")
     .addEventListener("click", () => {
         window.location.href = "home.html";
-});
+    });
