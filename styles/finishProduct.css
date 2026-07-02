@@ -54,3 +54,8 @@ button {
     color: white;
     margin-left: 10px;
 }
+
+.paymentType {
+    color: whitesmoke;
+    background: #1b2838
+}
